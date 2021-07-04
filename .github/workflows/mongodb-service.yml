@@ -28,7 +28,7 @@ jobs:
         - 27017:27017
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - run: npm ci
     - run: node client.js
       env:
@@ -50,7 +50,7 @@ jobs:
         - 27017/tcp
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - run: npm ci
     - run: node client.js
       env:
